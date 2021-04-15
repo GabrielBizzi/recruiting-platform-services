@@ -1,0 +1,40 @@
+.product + .product {
+  margin-top: 1rem;
+}
+
+.product {
+  margin: 0 1.5rem;
+
+  position: relative;
+  padding-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #26262610;
+
+  input {
+    position: absolute;
+    right: 0;
+  }
+
+  .productContent {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 0.7rem;
+
+      width: 70px;
+    }
+
+    & > div {
+      color: #503a2395;
+      p {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

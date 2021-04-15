@@ -1,0 +1,38 @@
+.inputGroup {
+  label {
+    color: #686868;
+    font-weight: 500;
+    
+    margin-bottom: 0.5rem; 
+  }
+
+  input {
+    width: 100%;
+    min-width: 100px;
+
+    padding: 1rem 1rem;
+    margin-top: 0.5rem;
+
+    font-size: 14pt;
+    color: #262626;
+    
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+
+    transition: .3s;
+
+    &:hover {
+      box-shadow: 0 0 10px 0px #503A2360;
+    }
+
+    &:focus {
+      outline: none;
+
+      border-color: rgb(174, 213, 252);
+    }
+  }
+}
+
+.inputGroup+.inputGroup {
+  margin-top: 1rem;
+}

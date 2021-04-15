@@ -1,0 +1,158 @@
+
+.wrap {
+  font-family: sans-serif;
+
+  width: 100%;
+  height: 100%;
+
+  & > p {
+    text-align: center;
+    color: #503a23;
+
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .container {
+    position: relative;
+
+    padding: 1.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    .product + .product {
+      margin-top: 1rem;
+    }
+
+    .product {
+      margin: 0 1.5rem;
+
+      position: relative;
+
+      border-bottom: 1px solid #26262610;
+
+      input {
+        position: absolute;
+        right: 0;
+      }
+
+      .productContent {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 0.7rem;
+
+          width: 70px;
+        }
+
+        & > div {
+          color: #503a2395;
+          p {
+            margin: 0;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        display: block;
+
+        .subProduct + .subProduct {
+          margin-top: 1rem;
+        }
+    
+        .subProduct {
+          margin: 0 1.5rem;
+    
+          display: flex;
+          align-items: center; 
+          justify-content: space-between;
+
+          position: relative;
+          padding-bottom: 1rem;
+    
+          input {
+            position: absolute;
+            right: 0;
+          }
+    
+          .subProductContent {
+            display: flex;
+            align-items: center;
+    
+            img {
+              margin-right: 0.7rem;
+    
+              width: 50px;
+            }
+    
+            & > div {
+              color: #503a2395;
+              p {
+                margin: 0;
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .buttonGrid {
+    position: relative;
+    bottom: 0px;  // -60px // slide animation
+
+    display: flex;
+
+    width: 100%;
+    height: 60px;
+
+    a {
+      flex: 50%;
+    }
+
+    .button {
+      flex: 50%;
+      width: 100%;
+      height: 100%;
+
+      font-size: 12pt;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      border: none;
+
+      color: #ddd;
+  
+      padding: 1rem 2.5rem;
+
+      cursor: pointer;
+
+      transition: .3s;
+    }
+    .buttonBack {
+      background: #d15f41;
+
+      &:hover {
+        background: #be4f33;
+      }  
+    }
+
+    .buttonProceed {
+      background: #3DC890;
+
+      &:hover {
+        background: rgb(23, 150, 99);
+      }
+    }
+  }
+}
